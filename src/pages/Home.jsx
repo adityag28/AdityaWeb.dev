@@ -1,13 +1,12 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-
+import ProfilePic from "../assets/Profile.png"
 const Home = () => {
     return (
         <section className="flex flex-col md:flex-row items-center justify-center mt-15 py-8 px-4 scroll-mt-20 mb-6 gap-10" id='home'>
             <img
                 alt='profile-picture'
-                src='/src/assets/Profile.png'
+                src={ProfilePic}
                 className='rounded-b-full w-40 h-56 md:w-60 md:h-80 md:mr-10 md:ml-10 mt-10'
             />
 
