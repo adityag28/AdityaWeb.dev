@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
     return (
-        <section className="min-h-screen px-4 sm:px-6 md:px-10 py-10 max-w-5xl mx-auto scroll-mt-20" id="about">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-gray-800">About Me</h1>
+        <section className="min-h-screen px-4 sm:px-6 md:px-10 py-10 max-w-5xl mx-auto scroll-mt-14" id="about">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-gray-800">About Me</h1>
 
             <div className="bg-white shadow-md p-4 sm:p-6 md:p-8 rounded-2xl space-y-4 text-gray-800 leading-relaxed text-sm sm:text-base">
                 <p>
@@ -19,7 +19,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-4">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Technical Skills</h2>
                 <div className="flex flex-wrap gap-3">
                     {[

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import ProfilePic from "../assets/Profile.png"
 const Home = () => {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center mt-15 py-8 px-4 scroll-mt-20 mb-6 gap-10" id='home'>
+        <section className="flex flex-col md:flex-row items-center justify-center mt-15 py-8 px-4 scroll-mt-24 mb-6 gap-10" id='home'>
             <img
                 alt='profile-picture'
                 src={ProfilePic}
