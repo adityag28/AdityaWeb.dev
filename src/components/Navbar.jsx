@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,15 +9,26 @@ const Navbar = () => {
                 <h1 className="text-xl font-bold text-blue-600">AdityaWeb.dev</h1>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="text-blue-600 md:hidden focus:outline-none"
+                    className="text-blue-600 md:hidden focus:outline-none text-2xl"
+                    aria-label="Toggle navigation"
                 >
                     ☰
                 </button>
-                <div className={`flex-col md:flex md:flex-row md:gap-8 absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent transition-all duration-300 ${isOpen ? 'flex' : 'hidden'}`}>
-                    <a href='#home' className="px-4 py-2 hover:text-blue-600">Home</a>
-                    <a href='#about' className="px-4 py-2 hover:text-blue-600">About</a>
-                    <a href='#projects' className="px-4 py-2 hover:text-blue-600">Projects</a>
-                    <a href='#contact' className="px-4 py-2 hover:text-blue-600">Contact</a>
+
+                <div
+                    className={`flex-col md:flex md:flex-row md:gap-8 absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent transition-all duration-300 ${isOpen ? 'flex' : 'hidden'
+                        }`}
+                >
+                    {['home', 'about', 'projects', 'contact'].map((link, index) => (
+                        <a
+                            key={index}
+                            href={`#${link}`}
+                            onClick={() => setIsOpen(false)}
+                            className="px-4 py-2 hover:text-blue-600 text-center"
+                        >
+                            {link.charAt(0).toUpperCase() + link.slice(1)}
+                        </a>
+                    ))}
                 </div>
             </div>
         </nav>

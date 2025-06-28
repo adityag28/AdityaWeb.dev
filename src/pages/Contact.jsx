@@ -60,7 +60,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-blue-500"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
                         placeholder="Your full name"
                     />
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-blue-500"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
                         placeholder="your.email@example.com"
                     />
                 </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                         rows="5"
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-blue-500"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
                         placeholder="Write your message here..."
                     ></textarea>
                 </div>
@@ -109,7 +109,7 @@ const Contact = () => {
 
             <div className="mt-12 max-w-lg mx-auto text-center space-y-4">
                 <h2 className="text-xl font-semibold">Connect with me</h2>
-                <div className="flex justify-center gap-8 text-blue-600 text-lg">
+                <div className="flex flex-wrap justify-center gap-6 text-blue-600 text-lg">
                     <a
                         href="https://github.com/adityag28"
                         target="_blank"

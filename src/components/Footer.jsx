@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { PiReadCvLogoFill } from "react-icons/pi";
+import { PiReadCvLogoFill } from 'react-icons/pi';
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-gray-100 border-t border-gray-300 py-6">
+        <footer className="w-full bg-gray-100 border-t border-gray-300 py-6 mt-10">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p className="text-gray-600 text-sm text-center md:text-left">
                     &copy; {new Date().getFullYear()} Aditya Gaikwad. All rights reserved.

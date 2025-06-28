@@ -2,11 +2,12 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import MahaFort from "../assets/mahafort.png";
 import WalkInQr from "../assets/walkinqr.png";
+import ExpenseTracker from "../assets/expensetracker.png"
 
 const Projects = () => {
     const projects = [
         {
-            title: "MahaForts – A web portal for Maharashtra’s Forts",
+            title: "MahaForts – A Web Portal for Maharashtra’s Forts",
             techStack: "React.js, Bootstrap, CSS",
             description:
                 "Informational portal featuring Maharashtra’s historic forts with fort details, images, and travel info. Fully responsive UI built using React Router and card-based layout.",
@@ -22,6 +23,15 @@ const Projects = () => {
             liveLink: "https://walkinqr.netlify.app",
             githubLink: "https://github.com/adityag28/restaurant-web-app",
             image: WalkInQr,
+        },
+        {
+            title: "ExpenseTracker – Personal Finance Dashboard (In Progress)",
+            techStack: "React.js, Tailwind CSS, Node.js, SQL",
+            description:
+                "A personal finance tracking app to monitor monthly expenses, categorize spending, and get visual insights. Currently under development – features like income tracking, chart analytics, and login system coming soon.",
+            liveLink: "#",
+            githubLink: "#",
+            image: ExpenseTracker,
         },
     ];
 

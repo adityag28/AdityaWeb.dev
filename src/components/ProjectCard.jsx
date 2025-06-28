@@ -6,12 +6,14 @@ const ProjectCard = ({ title, techStack, description, liveLink, githubLink, imag
             <img
                 src={image}
                 alt={`${title} screenshot`}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 sm:h-56 object-cover"
+                loading="lazy"
             />
             <div className="p-5 space-y-3">
                 <h2 className="text-lg sm:text-xl font-semibold text-blue-600">{title}</h2>
                 <p className="text-xs text-gray-500 uppercase tracking-wider">{techStack}</p>
-                <p className="text-sm text-gray-700">{description}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
+
                 <div className="flex flex-wrap gap-4 pt-2">
                     <a
                         href={liveLink}
